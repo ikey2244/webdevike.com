@@ -1,7 +1,7 @@
 code[class*="language-"],
 pre[class*="language-"] {
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: 'Fira Code', Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -64,7 +64,10 @@ pre[class*="language-"] {
 
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
-    background: $sidebarBright;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 12px 12px 24px #cfcfcf, 
+                -12px -12px 24px #ffffff;
   }
 
   .token.punctuation {
@@ -87,7 +90,7 @@ pre[class*="language-"] {
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: #690;
+    color: #328c8c;
   }
 
   .token.operator,
@@ -120,11 +123,11 @@ pre[class*="language-"] {
   code[class*="language-"],
   pre[class*="language-"] {
     color: $textDark;
-  }
-
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
-    background: $sidebarDark;
+    border-radius: 10px;
+    background: #11212E;
+    box-shadow: 8px 8px 16px #0c1821, 
+                -8px -8px 16px #162a3b;
+    
   }
 
   .token.punctuation {
@@ -178,4 +181,11 @@ pre[class*="language-"] {
   .token.important {
     color: #fd971f;
   }
+}
+
+.language-text {
+  // all: unset !important;
+  color: #D8589C !important;
+  background: none !important;
+  box-shadow: none !important;
 }

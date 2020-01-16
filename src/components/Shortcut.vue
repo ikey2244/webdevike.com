@@ -43,6 +43,7 @@ article {
     background: $sidebarBright;
     padding: 2rem;
     border-radius: 3px;
+    width: 200px;
     transition: background .15s ease-in-out, border-color .15s ease-in-out;
 
     @include respond-above(sm) {

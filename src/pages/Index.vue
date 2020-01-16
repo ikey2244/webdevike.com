@@ -1,14 +1,10 @@
 <template>
   <Layout :sidebar="false">
     <div class="content">
-      <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
+      <h1>{{ this.description }}</h1>
       <nav>
-        <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/getting-started" text="Introduction" icon="play-icon" />
-        <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
+        <Shortcut link="/getting-started" text="Let's go!" icon="play-icon" />
       </nav>
-      <GitLink class="git" size="large" />
     </div>
   </Layout>
 </template>
@@ -32,7 +28,7 @@ export default {
   },
   data() {
     return {
-      description: 'The ultimate static generated documentation theme for the JAM-stack'
+      description: 'Welcome to my blog'
     }
   },
   metaInfo() {
@@ -55,7 +51,7 @@ export default {
 h1 {
   text-align: center;
   max-width: 600px;
-  margin: 1.5em auto 1.5em;
+  margin: 1em auto 1em;
 
   @include respond-above(md) {
     max-width: 1000px;
@@ -68,13 +64,7 @@ h2 {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-
-  @include respond-above(sm) {
-    flex-direction: row;
-  }
+  margin: 0 auto;
 }
 
 .git {
