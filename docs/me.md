@@ -25,5 +25,3 @@ Yo! I am Isaac Weber. I am a fullstack developer based in Nashville, Tennesseee.
 
 * Figma
 * Squarespace
-* Wordpress
-* Sketch
