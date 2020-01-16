@@ -27,4 +27,3 @@ Yo! I am Isaac Weber. I am a fullstack developer based in Nashville, Tennesseee.
 * Squarespace
 * Wordpress
 * Sketch
-* Photoshop
