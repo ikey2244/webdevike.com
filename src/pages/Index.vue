@@ -35,7 +35,7 @@ export default {
     return {
       title: this.description,
       meta: [
-        { key: 'description', name: 'description', content: 'A theme for static site documentation based on Gridsome, ready to deploy to Netlify in one click.' }
+        { key: 'description', name: 'description', content: "Webdevike - Fullstack Developer from Nashville Tennessee" }
       ]
     }
   }
