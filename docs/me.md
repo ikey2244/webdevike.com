@@ -1,18 +1,28 @@
 ---
-title: Hey, I'm Isaac Weber
+title: Hello 👋
 date: 2018-09-15 07:42:34
 slug: me
 ---
 
-## I am a badass developer check out my skillzzzz
+## Introduction
 
-Skills: `GraphQl`, `Node`, `AWS`, `DevOPs`, `Vue`, `ES6`, `HTML`, `CSS` and a bunch of other stuff I don't have time to type out.
+Yo! I am Isaac Weber. I am a fullstack developer based in Nashville, Tennesseee. At work I am rebuilding a platform in `Apollo`, `GraphQL`, `Prisma`, and `Nuxt`
 
-## What makes me so awesome? 
+## Skills
 
-I don't have to prove myself I just am
+### Web Development
+* Node.js
+* Apollo
+* GraphQL
+* Prisma
+* Jest
+* DevOps
+* Nuxt
+* Vue
 
-bet you don't even know what this means...🙄
-```bash
-npx prisma deploy
-```
+### Design
+* Figma
+* Squarespace
+* Wordpress
+* Sketch
+* Photoshop

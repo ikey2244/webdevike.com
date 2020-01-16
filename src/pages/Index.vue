@@ -3,7 +3,7 @@
     <div class="content">
       <h1>{{ this.description }}</h1>
       <nav>
-        <Shortcut link="/getting-started" text="Let's go!" icon="play-icon" />
+        <Shortcut link="/me" text="Let's go!" icon="play-icon" />
       </nav>
     </div>
   </Layout>
