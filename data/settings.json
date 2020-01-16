@@ -4,8 +4,17 @@
       "section": "Welcome",
       "topics": [
         {
-          "title": "Who am I? ",
+          "title": "Who am I?",
           "slug": "me"
+        }
+      ]
+    },
+    {
+      "section": "Git",
+      "topics": [
+        {
+          "title": "Quickly Alist Git Commands",
+          "slug": "quickly-alias-git-commands"
         }
       ]
     }

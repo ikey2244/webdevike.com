@@ -7,11 +7,6 @@
             <ul>
               <li v-for="item in node.topics" :key="item.title">
                 <g-link class="topic" :to="'/' + item.slug">{{item.title}}</g-link>
-                <ul v-if="checkAnchors(node.slug, item.slug)" v-for="{ node } in $static.docs.edges" :key="node.id">
-                  <li v-for="heading in node.headings" :key="heading.value">
-                    <a class="sub-topic" :href="'/' + item.slug + heading.anchor">{{heading.value}}</a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </li>
@@ -33,28 +28,12 @@ query Menu {
       }
     }
   }
-  docs: allDoc {
-    edges {
-      node {
-        slug
-        headings {
-          value
-          anchor
-        }
-      }
-    }
-  }
 }
 </static-query>
 
 <script>
-import GitLink from '~/components/GitLink.vue'
-import throttle from 'lodash/throttle'
 
 export default {
-  components: {
-    GitLink
-  },
   watch: {
     '$route' () {
       this.$store.commit('closeSidebar')
@@ -72,31 +51,10 @@ export default {
       } else {
         this.$store.commit('openSidebar')
       }
-    },
-    sidebarScroll: function() {
-      let mainNavLinks = document.querySelectorAll('.topic.active + ul .sub-topic')
-      let fromTop = window.scrollY
-
-      mainNavLinks.forEach(link => {
-        let section = document.querySelector(link.hash)
-        let allCurrent = document.querySelectorAll('.current'), i
-
-        if (section.offsetTop <= fromTop) {
-          for (i = 0; i < allCurrent.length; ++i) {
-            allCurrent[i].classList.remove('current')
-          }
-          link.classList.add('current')
-        } else {
-          link.classList.remove('current')
-        }
-      })
     }
   },
   beforeMount () {
     this.stateFromSize()
-  },
-  mounted() {
-    window.addEventListener('scroll', throttle(this.sidebarScroll, 50))
   }
 }
 </script>
@@ -167,46 +125,12 @@ ul {
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 20px;
-  opacity: .3;
+  opacity: .2;
   letter-spacing: .15em;
-  font-weight: 700;
 }
 
 .topic {
   font-weight: 700;
 }
 
-.sub-topic {
-  font-size: .875rem;
-  position: relative;
-  opacity: .8;
-
-  &::after {
-    content: '';
-    transition: opacity .15s ease-in-out;
-    width: 6px;
-    height: 6px;
-    background: $brandPrimary;
-    border-radius: 100%;
-    display: block;
-    opacity: 0;
-    position: absolute;
-    top: 13px;
-    left: -15px;
-  }
-
-  &.current {
-    &::after {
-      opacity: 1;
-    }
-  }
-}
-
-.git {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 </style>
-
-
