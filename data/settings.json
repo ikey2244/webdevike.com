@@ -1,15 +1,6 @@
 {
   "sidebar": [
     {
-      "section": "GraphQL",
-      "topics": [
-        {
-          "title": "How To Deploy Apollo Server To Elastic Beanstalk ",
-          "slug": "/deploy-apollo-server-to-elastic-beanstalk"
-        }
-      ]
-    },
-    {
       "section": "Welcome",
       "topics": [
         {
@@ -24,6 +15,15 @@
         {
           "title": "Quickly Alist Git Commands",
           "slug": "quickly-alias-git-commands"
+        }
+      ]
+    },
+    {
+      "section": "GraphQL",
+      "topics": [
+        {
+          "title": "How To Deploy Apollo Server To Elastic Beanstalk ",
+          "slug": "deploy-apollo-server-to-elastic-beanstalk"
         }
       ]
     }
