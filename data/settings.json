@@ -1,6 +1,15 @@
 {
   "sidebar": [
     {
+      "section": "GraphQL",
+      "topics": [
+        {
+          "title": "How To Deploy Apollo Server To Elastic Beanstalk ",
+          "slug": "/deploy-apollo-server-to-elastic-beanstalk"
+        }
+      ]
+    },
+    {
       "section": "Welcome",
       "topics": [
         {
