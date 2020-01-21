@@ -16,3 +16,4 @@ fields:
   label: slug
 pages:
 - docs/how-to-deploy-apollo-server-to-elastic-beanstalk.md
+- docs/what-i-use.md
