@@ -1,6 +1,15 @@
 {
   "sidebar": [
     {
+      "section": "What I Use",
+      "topics": [
+        {
+          "title": "What I Use",
+          "slug": "/uses"
+        }
+      ]
+    },
+    {
       "section": "Welcome",
       "topics": [
         {
